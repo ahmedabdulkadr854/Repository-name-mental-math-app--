@@ -1,0 +1,17 @@
+{
+  "name": "Flutter",
+  "image": "cirrusci/flutter:stable",
+  "forwardPorts": [3000],
+  "containerEnv": {
+    "PUB_CACHE": "/root/.pub-cache"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Dart-Code.flutter",
+        "Dart-Code.dart-code"
+      ]
+    }
+  },
+  "postCreateCommand": "flutter pub get"
+}
